@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>PSIT Kanpur</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<script src="javascript/js.js="></script>
+</head>
+
+<body class="body">
+	<!-- head section start -->
+	<header style="background-color: #100424;" class="mainheader">
+		<img src="psit images/logo psit.png">
+		<content id="search">
+			<form class="form">
+				<input type="text" name="search" placeholder="Search anything..."
+					onclick="window.location.href='search.html'">
+			</form>
+		</content>
+		<nav>
+			<ul>
+				<li><a href="index.html"><b>HOME</b></a></li>
+				<!-- <li><a href="course.html"><b>COURSE</b></a></li> -->
+				<li><a href="Gallery.html"><b>GALLERY</b></a></li>
+				<li><a href="contact.html"><b>CONTACT</b></a></li>
+				<li><a href="login.html"><b>LOGIN</b></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- head section end -->
+	<br>
+	<!-- slider section start -->
+	<div class="slideshow-container">
+		<div class="iambrpslides fade">
+			<div class="numbertext">01 / 03</div>
+			<img src="./psit images/download.jpg">
+		</div>
+		<div class="iambrpslides fade">
+			<div class="numbertext">02 / 03</div>
+			<img src="./psit images/c1.jpg">
+		</div>
+		<div class="iambrpslides fade">
+			<div class="numbertext">03 / 03</div>
+			<img src="./psit images/images.jpg">
+		</div>
+	</div>
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+	<!-- js file for scroll images in slider -->
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("iambrpslides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+		}
+	</script>
+	<br>
+	<script type="text/javascript">
+		document.title = "Home";
+	</script>
+	<!-- js file end -->
+	<script src="scripts/slider.js"></script>
+	<!-- slider section end -->
+
+	<!-- about section start -->
+	<div class="mainContent">
+		<div class="Content">
+			<article class="topContent">
+				<header>
+					<h3><a href="#" title="My First Post">About PSIT</a> </h3>
+				</header>
+				<img src="./psit images/psitbulding.jpg" alt="" srcset="">
+				<content>
+					<p>Since its inception in 2004, PSIT has been a frontrunner in the field of education with numerous
+						achievements to its name. PSIT believes in strengthening the foundation of the students.
+						Academic research based on rigorous pedagogy equips our students to face challenges in the real
+						world. The institute prepares students to be ethical leaders in a diverse and complex world.
+						PSIT offers various courses in Engineering, Pharmaceutical Sciences, Business Management and
+						Computer Applications. All departments, with their dynamic community of students and
+						distinguished faculty, offer premium undergraduate and postgraduate programs. State of the art
+						facilities and a sprawling 80 acres campus nestled amid sylvan surroundings accelerate the
+						learning process.
+						The PSIT campus is an architectural marvel. Designed as the best environment-friendly campus in
+						North India, we are committed to providing our students a clean and healthy environment. A
+						25,000 Ltr RO Plant, a 1350 KW Power Plant and a three-chambered Vermicompost Plant reaffirm our
+						commitment to the cause.
+						Our infrastructure which includes an auditorium, modern workshops, high-tech labs, spacious
+						seminar halls and well stocked libraries can compete with the best campuses. Internet access at
+						1 Gbps (STM -1), a 24×7 Power Backup enabled through 33KV Power Line fuel our thirst for
+						knowledge. Our fleet of 30 air-conditioned buses ensures an efficient transportation network.
+						The institute provides a stimulating environment for intellectual development, free-thinking,
+						and personal growth. The academic setup challenges its students with dynamic learning
+						opportunities. We equip them with the skills, insights, attitudes, and practical experiences to
+						take up responsibilities in their careers and life.
+						PSIT owes its commitment to excellence to its illustrious faculty. A stringent selection process
+						of faculty members is the cornerstone of our success. The exceptionally talented and seasoned
+						teaching fraternity motivates the students to push boundaries and become the best versions of
+						themselves.
+						The annual placement portfolio of PSIT is a testimony to its excellent track record of
+						outstanding placements through which our students are ready to carve a niche for themselves in
+						the professional world.
+						PSIT prepares its students to establish themselves in their chosen field of academics with an
+						aim to develop well-rounded and discerning citizens.
+					</p>
+				</content>
+			</article>
+		</div>
+	</div>
+	<aside class="top-sidebar">
+		<article>
+			<h3>VISION</h3>
+			<p>To achieve excellence in professional education and create an ecosystem for the holistic development of
+				all stakeholders.</p>
+		</article>
+	</aside>
+	<aside class="middle-sidebar">
+		<article>
+			<h3>Mission</h3>
+			<p>To provide an environment of effective learning and innovation transforming students into dynamic,
+				responsible and productive professionals in their respective fields, who are capable of adapting to the
+				changing needs of the industry and society.</p>
+		</article>
+	</aside>
+	<aside class="buttom-sidebar">
+		<article>
+			<h3>Be ahead of your peers</h3>
+			<p>Fast track your education with PSIT</p>
+		</article>
+	</aside>
+	<!-- about section end -->
+
+	<!-- footer section start -->
+	<footer class="footer-distributed">
+		<div class="psit">
+			<!-- <img style="height: 100px;" src="./psit images/logo psit.png" alt=""> -->
+		</div>
+		<div class="footer-left">
+			<p class="footer-links">
+				<a href="index.html"><b>Home</b></a>
+				<a href="course.html"><b>Course</b></a>
+				<a href="download.html"><b>Gallery</b></a>
+				<a href="contact.html"><b>Contact</b></a>
+				<a href="login.html"><b>login</b></a>
+			</p>
+			<p class="footer-company-name">Our mission is to provide the best <br> value and service to our clients.
+				<br> Here we
+				are always ready to help you. <br> We are devoted to the task to construct <br> your dream to fit all
+				your needs
+				and preference. <br> We realize that our success <br> starts and ends with our employees.
+			</p>
+			<p></p>
+			<div class="footer-icons">
+				<a href="https://www.facebook.com/psit.ac.in"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://api.whatsapp.com/send/?phone=918005334433&text&type=phone_number&app_absent=0"><i
+						class="fa-brands fa-square-whatsapp"></i></a>
+				<a href="https://www.youtube.com/channel/UC03XHJR0rh4t9MwwojbbiaA"><i
+						class="fa-brands fa-youtube"></i></a>
+				<a
+					href="https://www.linkedin.com/school/psit-kanpur-pranveer-singh-institute-of-technology-/?viewAsMember=true"><i
+						class="fa-brands fa-linkedin"></i></a>
+				<a href="https://twitter.com/PSITKanpur2004"><i class="fa-brands fa-twitter"></i></a>
+			</div>
+			<p class="footer-company-name">© Copyright 2022</p>
+		</div>
+		<div class="footer-right">
+			<p><i class="fa-solid fa-envelope"></i><b>Mail Us:-</b></p>
+			<form action="#" method="post">
+				<input type="text" name="email" placeholder="Email">
+				<textarea name="message" placeholder="Message"></textarea>
+				<button>Send</button>
+			</form>
+		</div>
+	</footer>
+	<!-- footer section end -->
+</body>
+
+</html>
